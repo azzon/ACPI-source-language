@@ -1,0 +1,34 @@
+{
+    "name": "acpi-source-language",
+    "displayName": "ACPI Source Language",
+    "description": "Semantic highlight for .asl/.asi files.",
+    "version": "0.0.1",
+    "icon": "asl.png",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "author": {
+        "name": "Cong Zhang"
+    },
+    "publisher": "CongZhang",
+    "contributes": {
+        "languages": [{
+            "id": "asl",
+            "aliases": ["ASL", "asl"],
+            "extensions": [".asl",".asi",".aslc",".i",".ii",".iii",".iiii"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "asl",
+            "scopeName": "source.asl",
+            "path": "./syntaxes/asl.tmLanguage.json"
+        }]
+    },
+    "repository": {
+        "url": "https://github.com/azzon/ACPI-source-language",
+        "type": "git"
+    }
+}
